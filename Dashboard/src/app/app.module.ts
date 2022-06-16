@@ -11,6 +11,19 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NewUserComponent } from './components/new-user/new-user.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list'
+
+import { MatIconModule } from '@angular/material/icon';
+
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +37,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MatToolbarModule,
+    MatSidenavModule,MatListModule,
+    MatIconModule,
+    MatButtonModule, 
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
