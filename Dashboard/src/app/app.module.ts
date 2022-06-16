@@ -22,7 +22,13 @@ import { MatListModule } from '@angular/material/list'
 import { MatIconModule } from '@angular/material/icon';
 
 import { MatButtonModule } from '@angular/material/button';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PpcComponent } from './components/ppc/ppc.component';
+import { InternshipComponent } from './components/internship/internship.component';
+import { LogicBuildingComponent } from './components/logic-building/logic-building.component';
+import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
+import { CreateProfileComponent } from './components/create-profile/create-profile.component';
+import { RawdataComponent } from './components/rawdata/rawdata.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +38,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     LogInComponent,
     DashboardComponent,
     SidebarComponent,
-    NewUserComponent
+    NewUserComponent,
+    PpcComponent,
+    InternshipComponent,
+    LogicBuildingComponent,
+    UpdateProfileComponent,
+    CreateProfileComponent,
+    RawdataComponent
   ],
   imports: [
     BrowserModule,
