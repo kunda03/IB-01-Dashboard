@@ -1,4 +1,9 @@
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 30px;
+}
 
-.Search{
-    margin-left: 1000px;
+.Search {
+    margin-left: 900px;
 }
