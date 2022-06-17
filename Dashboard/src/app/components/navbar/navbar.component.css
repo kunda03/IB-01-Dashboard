@@ -2,8 +2,16 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-size: 30px;
+    color: white;
 }
 
 .Search {
-    margin-left: 900px;
+    margin-left: 720px;
+}
+.navbar{
+    background-color: #343a40!important;
+}
+.logout{
+    color: white;
+   margin-left: 50px;
 }
