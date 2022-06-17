@@ -1,5 +1,12 @@
-.main{
-    height: 200px;
-    width: 200px;
-    background-color: aqua;
+.cards{
+    height: 100%;
+}
+.button{
+    margin-top: 110px;
+    width: 90px;
+    border-radius: 3px;
+}
+.button1{
+    width: 90px;
+    border-radius: 3px;
 }
