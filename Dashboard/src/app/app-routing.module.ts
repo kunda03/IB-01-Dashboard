@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import{DashboardComponent} from './components/dashboard/dashboard.component';
-import { LogInComponent } from './components/log-in/log-in.component';
-import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
-import { PpcComponent } from './components/ppc/ppc.component';
-import { LogicBuildingComponent } from './components/logic-building/logic-building.component';
-import { InternshipComponent } from './components/internship/internship.component';
-import { RawdataComponent } from './components/rawdata/rawdata.component';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
+import { LoginComponent } from './components/login/login.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AuthGuard } from './guards/auth.guard';
+
+
+
 
 const routes: Routes = [
-
-  {path:'dashboard',component:DashboardComponent},
-  { path:'log-in',component:LogInComponent},
-  { path:'update-profile',component:UpdateProfileComponent}, {path:'logicBuilding' ,component:LogicBuildingComponent},
-  {path:'ppc',component:PpcComponent},
-  {path:'internship',component:InternshipComponent },
-  {path:'rawdata',component:RawdataComponent}
+  {path:'login',component:LoginComponent},
+  {path:'forget-password',component:ForgetPasswordComponent},
+  {path:'',redirectTo:'/login',pathMatch:'full'},
+  { path:'admin',
+    canActivate:[AuthGuard],
+    loadChildren:()=>import('./modules/admin/admin.module').then((m)=>m.AdminModule)},
+  {path:'**',component:NotFoundComponent}
+  
 ];
 
 @NgModule({

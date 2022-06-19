@@ -1,50 +1,30 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { UserDataComponent } from './components/user-data/user-data.component';
-import { LogInComponent } from './components/log-in/log-in.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { NewUserComponent } from './components/new-user/new-user.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
-
-
 import {MatToolbarModule} from '@angular/material/toolbar';
-
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list'
-
 import { MatIconModule } from '@angular/material/icon';
-
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PpcComponent } from './components/ppc/ppc.component';
-import { InternshipComponent } from './components/internship/internship.component';
-import { LogicBuildingComponent } from './components/logic-building/logic-building.component';
-import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
-import { CreateProfileComponent } from './components/create-profile/create-profile.component';
-import { RawdataComponent } from './components/rawdata/rawdata.component'
+import { LoginComponent } from './components/login/login.component';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    UserDataComponent,
-    LogInComponent,
-    DashboardComponent,
-    SidebarComponent,
-    NewUserComponent,
-    PpcComponent,
-    InternshipComponent,
-    LogicBuildingComponent,
-    UpdateProfileComponent,
-    CreateProfileComponent,
-    RawdataComponent
+    LoginComponent,
+    ForgetPasswordComponent,
+    NotFoundComponent,
+  
+   
+   
   ],
   imports: [
     BrowserModule,
@@ -54,7 +34,11 @@ import { RawdataComponent } from './components/rawdata/rawdata.component'
     MatSidenavModule,MatListModule,
     MatIconModule,
     MatButtonModule, 
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
+  
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

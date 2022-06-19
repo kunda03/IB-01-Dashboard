@@ -1,0 +1,20 @@
+.main {
+    height: 97vh;
+    width: 100%;
+    background-color: rgb(212, 185, 237);
+    display: flex;
+}
+
+.sidebar {
+    height: 97vh;
+    width: 15%;
+    background-color: #343a40;
+    /* position: fixed; */
+
+}
+
+.dashboard {
+    width: 85%;
+    height: 97vh;
+    background-color: rgb(188, 151, 107);
+}
