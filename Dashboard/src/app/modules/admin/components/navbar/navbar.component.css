@@ -1,0 +1,56 @@
+.heading {
+    font-family: 'Arial,Helvetica',sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+}
+
+.Search {
+    margin-left: 250px;
+}
+.navbar{
+    background-color: #343a40!important;
+}
+.logout{
+    color: white;
+    margin-left: 3px; 
+ 
+
+}
+.navbar-brand{
+color: #fff;
+font-weight: bold;
+font-size: 25px;
+} 
+label{
+    line-height: 70px;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 550;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+  nav .menu-bar{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    display: none;
+    
+  }
+
+  @media  (max-width: 850px) {
+.form-inline input{
+    display: none;
+}
+.logout button{
+    display: none;
+}
+label{
+    text-align: center;
+}
+}
+
+
+
+

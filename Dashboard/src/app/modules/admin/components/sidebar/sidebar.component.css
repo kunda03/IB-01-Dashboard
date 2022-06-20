@@ -1,3 +1,48 @@
-p{
-    color: white;
+
+
+
+.sidebar a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+   
+letter-spacing: 1px;
+font-size: 17.5px;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.sidebar a:hover{
+     margin-left: 20px;
+    transition: 0.4s; 
+    padding-left: 20px;
+    background:royalblue;
+} 
+#sidebar{
+  display: none;
+}
+
+.sidebar span{
+  font-size: 20px;
+  margin-left: 10px;
+  color: #fff;
+}
+@media  (max-width: 850px) {
+  
+  .sidebar span{
+
+    display: none;
+  }
+  .sidebar  i{
+    line-height: 80px;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    align-items: center;
+    justify-items: center;
+  }
+  .sidebar{
+    width: 20px;
+    
+  }
 }
